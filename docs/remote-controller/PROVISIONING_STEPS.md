@@ -5,6 +5,7 @@
 | Field | Value |
 |-------|-------|
 | **Component Name** | Remote Controller |
+| **Version** | — |
 | **Purpose** | A standalone Java tool that captures changes from PostgreSQL via triggers and synchronizes data to C-Store (columnar read database) for analytics workloads. Supports bundled (default) and remote deployment modes. |
 | **Technologies** | PostgreSQL, C-Store (columnar extension), Java |
 
@@ -19,7 +20,7 @@
 | C-Store extension (cstore_fdw) | — | Target read database (PostgreSQL extension) |
 | PostgreSQL triggers (pre-configured) | — | Change capture on write tables |
 
-> **Note:** The Bundled Controller is included with the product by default. Install it before considering a Remote Controller.
+> **Note:** The Bundled Controller is included with the product by default. Configure and verify the Bundled Controller before considering a Remote Controller deployment.
 
 ### Hardware Requirements
 

@@ -5,6 +5,7 @@
 | Field | Value |
 |-------|-------|
 | **Component Name** | Multi App |
+| **Version** | — |
 | **Purpose** | Enables horizontal scaling by deploying additional application server nodes in a Parent–Child topology. The parent node manages centralized scheduling and caching while child nodes share the user-request load. |
 | **Technologies** | RocksDB (metadata cache), gRPC (inter-node communication) |
 
@@ -93,7 +94,7 @@ sed -i 's/^grpc.port=.*/grpc.port=<grpc_port>/' conf/grpc.properties
 
 **Expected outcome:** RocksDB data directory and gRPC port are configured.
 
-> **Note:** RocksDB is used for framework-level metadata caching only. It does not handle product-level cache.
+> **Note:** RocksDB is used for framework-level metadata caching only (e.g., internal routing tables, configuration state). Application-level or product-level caching (e.g., user session data, query result caching) is managed separately by the product and is outside the scope of this component.
 
 ### Step 4 — Configure the TaskEngine on the Parent Node
 

@@ -5,6 +5,7 @@
 | Field | Value |
 |-------|-------|
 | **Component Name** | DC-DR Support (Data Center — Disaster Recovery) |
+| **Version** | — |
 | **Purpose** | Provides disaster recovery backup for the primary PostgreSQL database using repmgr, an open-source replication manager. Supports automatic, semi-automatic, and manual failover modes. |
 | **Technologies** | PostgreSQL, repmgr (open-source) |
 
